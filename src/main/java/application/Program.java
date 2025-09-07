@@ -8,6 +8,7 @@ import model.Seller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
@@ -50,6 +51,15 @@ public class Program {
         seller.setName("Martha Waine");
         sellerDao.update(seller);
         System.out.println("Update completed");
+
+        System.out.println("=== TEST 6: seller findAll ===");
+        System.out.println("Enter id for delete test: ");
+        Scanner sc = new Scanner(System.in);
+        int id = sc.nextInt();
+
+        sellerDao.deletebyId(id);
+        System.out.println("Deleted copleted");
+
 
     }
 
