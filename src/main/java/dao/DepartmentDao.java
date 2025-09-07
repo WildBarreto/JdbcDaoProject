@@ -1,0 +1,14 @@
+package dao;
+
+import model.Department;
+
+import java.util.List;
+
+public interface DepartmentDao {
+    void insert(Department obj);
+    void update(Department obj);
+    void deletebyId(Integer id);
+    Department findById(Integer id);
+    List<Department> finfAll();
+
+}
